@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  todo-rest-api:
+  employeeinformation:
     image: 162997/employeeinformation:0.0.1-SNAPSHOT
     ports:
     - 5001:5000
