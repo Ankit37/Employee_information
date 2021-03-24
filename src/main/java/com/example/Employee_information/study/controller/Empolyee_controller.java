@@ -35,7 +35,7 @@ public class Empolyee_controller {
 	}
 
 	@GetMapping("/id/{id}")
-	public Optional<Empolyee_information_entity> gettinguserbyId(@PathVariable int id) {
+	public Optional<Empolyee_information_entity> gettinguserbyId(@PathVariable Integer id) {
 		Optional<Empolyee_information_entity> user = employee_repo.findById(id);
 		if (user == null) {
 			throw new UserNotFoundException("id" + id);
