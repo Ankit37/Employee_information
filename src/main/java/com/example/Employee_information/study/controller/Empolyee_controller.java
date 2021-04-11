@@ -27,7 +27,7 @@ public class Empolyee_controller {
 
 		return "This is welcome page, please use the correct URI to get employee details";
 	}
-// To fetch all user details
+
 	@GetMapping("/getalluser")
 	public List<Empolyee_information_entity> getAllUser() {
 		return employee_repo.findAll();
